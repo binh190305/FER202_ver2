@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Navbar, Nav, Form, FormControl, Button, Card, Row, Col, Breadcrumb } from 'react-bootstrap';
-// Đảm bảo đã import Bootstrap CSS trong App.js
+
 
 // Dữ liệu giả định cho 4 sinh viên
 const studentsData = [
@@ -10,13 +10,12 @@ const studentsData = [
   { id: 'DE170049', name: 'Lê Hoàng Minh', campus: 'Đà Nẵng' },
 ];
 
-// Helper component cho mỗi thẻ sinh viên
 const StudentCard = ({ student }) => {
-  // Hàm tạo ảnh ngẫu nhiên từ dịch vụ placeholder
+  
   const getRandomImage = (id) => `https://picsum.photos/seed/${id}/200/250`;
 
   return (
-    // Col-6 trên màn hình vừa (md) để hiển thị 2 cột, và full-width trên màn hình nhỏ
+    
     <Col md={6} lg={3} className="mb-4">
       <div className="text-center p-3 border rounded h-100">
         
